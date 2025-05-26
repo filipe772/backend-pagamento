@@ -46,7 +46,7 @@ app.post('/criar-pagamento', async (req, res) => {
 });
 
 // Inicia o servidor na porta 3333
-app.listen(3333, '0.0.0.0', () => {
+app.listen(3333, () => {
   console.log('Servidor rodando na porta 3333');
 });
 // Exemplo de rota no backend Express

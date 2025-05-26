@@ -1,14 +1,19 @@
 {
-  "nome": "Filipe Queiroz Dias",
-  "email": "filipeq77@gmail.com",
-  "valor": 14.99,
-  "cpf": "15521722793",
+  "name": "backend-pagamento",
+  "version": "1.0.0",
+  "description": "Backend para integração com Mercado Pago - contrato de transporte",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js"
+  },
+  "author": "Filipe Queiroz Dias <filipeq77@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.9.0",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "mercadopago": "^1.5.17",
-    "react-native-dotenv": "^3.4.11"
+    "mercadopago": "^1.5.17"
   }
 }
+
