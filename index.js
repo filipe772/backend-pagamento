@@ -45,10 +45,6 @@ app.post('/criar-pagamento', async (req, res) => {
   }
 });
 
-// Inicia o servidor na porta 3333
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
 // Exemplo de rota no backend Express
 app.get('/verificar-pagamento/:id', async (req, res) => {
   const { id } = req.params;
@@ -62,6 +58,12 @@ app.get('/verificar-pagamento/:id', async (req, res) => {
     res.status(500).json({ status: 'error', message: 'Erro ao consultar pagamento' });
   }
 });
+// Define a porta e inicia o servidor
+const PORT = process.env.PORT || 3333;
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
+
 
 
 
