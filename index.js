@@ -18,7 +18,7 @@ mercadopago.configure({
 app.post('/criar-pagamento', async (req, res) => {
   try {
     const payment_data = {
-      transaction_amount: 14.99,
+      transaction_amount: 4.99,
       description: 'Pagamento do contrato de transporte',
       payment_method_id: 'pix',
       payer: {
